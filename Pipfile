@@ -9,6 +9,7 @@ pipenv = "*"
 sphinx = "*"
 sphinx-autobuild = "*"
 sphinx-copybutton = "*"
+jinja2 = {editable = true, path = "."}
 
 [dev-packages]
 autopep8 = "*"
@@ -16,3 +17,4 @@ jupyter = "*"
 pydocstyle = "*"
 pylint = "*"
 semver = "*"
+pytest = "*"

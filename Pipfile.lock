@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b395469134554d6b37eda02720ef5e18e4a1c796297101230c4c4dd2afe3e3eb"
+            "sha256": "f4faf4ff7c541b58f401267c96bf3370ff48470e44ded434aa3642ca2bba1b56"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -167,12 +167,8 @@
             "version": "==1.4.1"
         },
         "jinja2": {
-            "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==3.1.2"
+            "editable": true,
+            "path": "."
         },
         "livereload": {
             "hashes": [
@@ -417,6 +413,13 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==1.0.2"
+        },
+        "sphinxcontrib-domaintools": {
+            "hashes": [
+                "sha256:57543865134b15defe66b65fbc7073727c4d5068da380210be2cdd2e968728eb",
+                "sha256:5d7e33b8b5408006a76d567b3747561a29b9cdbec8d19699e4eb250f446263ad"
+            ],
+            "version": "==0.3"
         },
         "sphinxcontrib-htmlhelp": {
             "hashes": [
@@ -865,6 +868,14 @@
             "markers": "python_version >= '3.5'",
             "version": "==3.4"
         },
+        "iniconfig": {
+            "hashes": [
+                "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3",
+                "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==2.0.0"
+        },
         "ipykernel": {
             "hashes": [
                 "sha256:29cea0a716b1176d002a61d0b0c851f34536495bc4ef7dd0222c88b41b816123",
@@ -920,12 +931,8 @@
             "version": "==0.18.2"
         },
         "jinja2": {
-            "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
-            ],
-            "markers": "python_version >= '3.7'",
-            "version": "==3.1.2"
+            "editable": true,
+            "path": "."
         },
         "json5": {
             "hashes": [
@@ -1279,6 +1286,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==3.9.1"
         },
+        "pluggy": {
+            "hashes": [
+                "sha256:c2fd55a7d7a3863cba1a013e4e2414658b1d07b6bc57b3919e0c63c9abb99849",
+                "sha256:d12f0c4b579b15f5e054301bb226ee85eeeba08ffec228092f8defbaa3a4c4b3"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==1.2.0"
+        },
         "prometheus-client": {
             "hashes": [
                 "sha256:21e674f39831ae3f8acde238afd9a27a37d0d2fb5a28ea094f0ce25d2cbf2091",
@@ -1367,6 +1382,14 @@
             ],
             "index": "pypi",
             "version": "==2.17.4"
+        },
+        "pytest": {
+            "hashes": [
+                "sha256:78bf16451a2eb8c7a2ea98e32dc119fd2aa758f1d5d66dbf0a59d69a3969df32",
+                "sha256:b4bf8c45bd59934ed84001ad51e11b4ee40d40a1229d2c79f9c592b0a3f6bd8a"
+            ],
+            "index": "pypi",
+            "version": "==7.4.0"
         },
         "python-dateutil": {
             "hashes": [
