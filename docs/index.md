@@ -15,13 +15,15 @@ title: Sphinx Contribution Make Domain
 license
 ```
 
+---
+
+```{include} ../readme.md
+```
+
+---
+
 ## Indices and tables
 
 * {ref}`genindex`
 * {ref}`modindex`
 * {ref}`search`
-
----
-
-```{include} readme.md
-```
