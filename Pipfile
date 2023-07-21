@@ -4,11 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+"sphinxcontrib.domaintools" = "*"
 jinja2 = "*"
+loguru = "*"
 myst-parser = "*"
 pipenv = "*"
 sphinx = "*"
 sphinx-autobuild = "*"
+sphinx-autodoc2 = "*"
 sphinx-copybutton = "*"
 
 [dev-packages]

@@ -1,13 +1,26 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+# -*- coding: utf-8 -*-
+"""Configuration file for the Sphinx documentation builder.
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+For the full list of built-in configuration values, see the documentation:
+https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+-- Project information -----------------------------------------------------
+https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+"""
 import pathlib
 
 author = 'Kay-Uwe Lorenz'
+autodoc2_docstring_parser_regexes = [
+    # this will render all docstrings as Markdown
+    (r".*", "myst"),
+]
+autodoc2_packages = [
+    {
+        'path': '../sphinxcontrib',
+        'auto_mode': False,
+    }
+]
+autodoc2_render_plugin = 'myst'
 copyright = '2023, Kay-Uwe Lorenz'
 
 # -- General configuration ---------------------------------------------------
@@ -20,9 +33,9 @@ exclude_patterns = [
 ]
 
 extensions = [
+    'autodoc2',
     'myst_parser',
     'sphinx_copybutton',
-    'sphinx.ext.autodoc',
     'sphinx.ext.githubpages',
 ]
 
