@@ -11,6 +11,8 @@ sphinx = "*"
 autopep8 = "*"
 pydocstyle = "*"
 pylint = "*"
+jupyter = "*"
+semver = "*"
 
 [requires]
 python_version = "3.11"
