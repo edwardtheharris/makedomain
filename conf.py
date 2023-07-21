@@ -11,7 +11,12 @@ copyright = '2023, Kay-Uwe Lorenz'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build',
+    '.DS_Store',
+    '.venv',
+    'Thumbs.db',
+]
 
 extensions = [
     'myst_parser',
@@ -25,7 +30,7 @@ extensions = [
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
-myst_header_to_title = True
+myst_title_to_header = True
 project = 'Sphinx Contribution Make Domain'
 release = '1.0.0-rc.1'
 templates_path = ['_templates']
