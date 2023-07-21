@@ -19,7 +19,7 @@ jobs:
           python3 -m pipenv install
           python3 -m pipenv install --system --dev
           sphinx-build -b html docs pages
-      - name: Build and deploy Sphinx site
-        uses: sphinx-contrib/makedomain@v1.2.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Build and deploy Sphinx site
+      #   uses: sphinx-contrib/makedomain@v1.2.0
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
