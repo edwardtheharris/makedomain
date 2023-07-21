@@ -53,3 +53,6 @@ Build the documentation in HTML.
 ```{var} SPHINXOPTS
 Sphinx options for passing to the builder.
 ```
+
+```{automakefile} docs/Makefile
+```

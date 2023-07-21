@@ -35,6 +35,7 @@ extensions = [
     'myst_parser',
     'sphinx_copybutton',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.automakefile',
     'sphinxcontrib.makedomain',
 ]
 

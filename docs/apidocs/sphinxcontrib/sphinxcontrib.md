@@ -13,5 +13,6 @@
 :titlesonly:
 :maxdepth: 1
 
+sphinxcontrib.automakefile
 sphinxcontrib.makedomain
 ```
