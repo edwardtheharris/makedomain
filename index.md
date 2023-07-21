@@ -1,20 +1,27 @@
-.. Sphinx Contribution Make Domain documentation master file, created by
+---
+abstract: >
+   Sphinx Contribution Make Domain documentation master file, created by
    sphinx-quickstart on Fri Jul 21 09:22:08 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
+authors: Kay-Uwe (Kiwi) Lorenz, Xander Harris
+title: Sphinx Contribution Make Domain
+---
 
-Welcome to Sphinx Contribution Make Domain's documentation!
-===========================================================
+```{toctree}
+:maxdepth: 2
+:caption: Contents
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+license
+```
 
+## Indices and tables
 
+* {ref}`genindex`
+* {ref}`modindex`
+* {ref}`search`
 
-Indices and tables
-==================
+---
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+```{include} readme.md
+```
