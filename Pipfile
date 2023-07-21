@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 "sphinxcontrib.domaintools" = "*"
-jinja2 = "*"
 loguru = "*"
 myst-parser = "*"
 pipenv = "*"
@@ -13,6 +12,7 @@ sphinx = "*"
 sphinx-autobuild = "*"
 sphinx-autodoc2 = "*"
 sphinx-copybutton = "*"
+jinja2 = {editable = true, path = "."}
 
 [dev-packages]
 autopep8 = "*"

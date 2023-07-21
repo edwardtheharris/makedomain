@@ -10,17 +10,15 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#project-informatio
 import pathlib
 
 author = 'Kay-Uwe Lorenz'
-autodoc2_docstring_parser_regexes = [
-    # this will render all docstrings as Markdown
-    (r".*", "myst"),
-]
+autodoc2_docstrings = 'all'
 autodoc2_packages = [
     {
         'path': '../sphinxcontrib',
-        'auto_mode': False,
+        'auto_mode': True,
     }
 ]
 autodoc2_render_plugin = 'myst'
+autodoc2_index_template = None
 copyright = '2023, Kay-Uwe Lorenz'
 
 # -- General configuration ---------------------------------------------------
@@ -37,6 +35,7 @@ extensions = [
     'myst_parser',
     'sphinx_copybutton',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.makedomain',
 ]
 
 # -- Options for HTML output -------------------------------------------------
@@ -45,6 +44,10 @@ extensions = [
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
+myst_enable_extensions = [
+    'fieldlist',
+    'replacements',
+]
 myst_title_to_header = True
 project = 'Sphinx Contribution Make Domain'
 with pathlib.Path('../version').open('r', encoding='utf-8') as r_fh:

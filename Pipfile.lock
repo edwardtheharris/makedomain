@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "caad3a3aed9447e4d55c8129c9a85b94fecf4765a733cc212b8e7388e7d069a8"
+            "sha256": "5e325e65b0b7c67e5b000cbc49e052ece7a90764f2dce66ae12fae6054c49a0e"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -175,12 +175,8 @@
             "version": "==1.4.1"
         },
         "jinja2": {
-            "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
-            ],
-            "index": "pypi",
-            "version": "==3.1.2"
+            "editable": true,
+            "path": "."
         },
         "lazy-object-proxy": {
             "hashes": [
@@ -484,6 +480,14 @@
             "markers": "python_version >= '3.5'",
             "version": "==1.0.2"
         },
+        "sphinxcontrib-domaintools": {
+            "hashes": [
+                "sha256:57543865134b15defe66b65fbc7073727c4d5068da380210be2cdd2e968728eb",
+                "sha256:5d7e33b8b5408006a76d567b3747561a29b9cdbec8d19699e4eb250f446263ad"
+            ],
+            "index": "pypi",
+            "version": "==0.3"
+        },
         "sphinxcontrib-htmlhelp": {
             "hashes": [
                 "sha256:0cbdd302815330058422b98a113195c9249825d681e18f11e8b1f78a2f11efff",
@@ -515,14 +519,6 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==1.1.5"
-        },
-        "sphinxcontrib.domaintools": {
-            "hashes": [
-                "sha256:57543865134b15defe66b65fbc7073727c4d5068da380210be2cdd2e968728eb",
-                "sha256:5d7e33b8b5408006a76d567b3747561a29b9cdbec8d19699e4eb250f446263ad"
-            ],
-            "index": "pypi",
-            "version": "==0.3"
         },
         "tornado": {
             "hashes": [
@@ -1091,12 +1087,8 @@
             "version": "==0.18.2"
         },
         "jinja2": {
-            "hashes": [
-                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
-                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
-            ],
-            "index": "pypi",
-            "version": "==3.1.2"
+            "editable": true,
+            "path": "."
         },
         "json5": {
             "hashes": [
