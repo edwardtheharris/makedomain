@@ -2,7 +2,8 @@
 
 This [Sphinx extension](http://sphinx-doc.org) provides a
 [GNU Make](http://www.gnu.org/software/make/)
-[domain](http://sphinx-doc.org/domains.html).
+[domain](http://sphinx-doc.org/domains.html). These documents are published
+to [GitHub Pages](https://edwardtheharris.github.io/makedomain/).
 
 ## Installation
 
