@@ -1,28 +1,22 @@
-GNU Make Domain
-===============
+# GNU Make Domain
 
-This `Sphinx extension`_ provides a `GNU Make`_ `domain`_.
+This [Sphinx extension](http://sphinx-doc.org) provides a
+[GNU Make](http://www.gnu.org/software/make/)
+[domain](http://sphinx-doc.org/domains.html).
 
-.. _Sphinx extension: http://sphinx-doc.org
-.. _GNU Make: http://www.gnu.org/software/make/
-.. _domain: http://sphinx-doc.org/domains.html
+## Installation
 
+```{code-block} shell
+pip install sphinxcontrib-makedomain
+```
 
-Installation
-------------
+## Enable Extension
 
-::
+Add ``sphinxcontrib.makedomain`` to the `extensions` setting in {file}`conf.py`.
 
-    pip install sphinxcontrib-makedomain
-
-
-Enable Extension
-----------------
-
-Add ``sphinxcontrib.makedomain`` in ``extensions`` of `conf.py`::
-
-    extensions = [ 'sphinxcontrib.makedomain' ]
-
+```{code-block} python
+extensions = [ 'sphinxcontrib.makedomain' ]
+```
 
 Usage
 -----
