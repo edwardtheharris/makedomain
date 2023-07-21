@@ -42,11 +42,23 @@ Get ready for make.
 
 ### Targets
 
-Describe a target::
+Describe a target
 
-    .. target:: all
+````{code-block} rST
+:caption: rST
 
-       describe here whatever :target:`all` does
+.. target:: all
+
+   describe here whatever :target:`all` does
+````
+
+````{code-block} markdown
+:caption: MyST Markdown
+
+```{target} all
+describe here whatever {target}`all` does
+```
+````
 
 ### Variables
 
