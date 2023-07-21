@@ -62,22 +62,49 @@ describe here whatever {target}`all` does
 
 ### Variables
 
-Describe a variable::
+Describe a variable.
 
-    .. var:: MY_VAR
+```{code-block} rst
+:caption: rST
 
-       Describe here whatever :var:`MY_VAR` does.
+.. var:: MY_VAR
 
-Describe an exported variable::
+   Describe here whatever :var:`MY_VAR` does.
+```
 
-    .. expvar:: EXPORTED_VAR
+````{code-block} markdown
+:caption: MyST Markdown
 
-       Describe here whatever :expvar:`EXPORTED_VAR` does.
+```{var} MY_VAR
+Describe here whatever {var}`MY_VAR` does.
+```
+````
 
-       This would describe::
+Describe an exported variable.
 
-           export EXPORTED_VAR = some string
+````{code-block} rst
+:caption: rST
 
+.. expvar:: EXPORTED_VAR
+
+   Describe here whatever :expvar:`EXPORTED_VAR` does.
+
+   This would describe::
+
+      export EXPORTED_VAR = some string
+````
+
+````{code-block} markdown
+:caption: MyST Markdown
+
+```{expvar} EXPORTED_VAR
+Describe here whatever {expvar}`EXPORTED_VAR` does.
+
+This would describe:
+
+    export EXPORTED_VAR = some string
+```
+````
 
 ## License
 
