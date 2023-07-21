@@ -1,0 +1,35 @@
+name: Publish to Pages
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions: write-all
+
+jobs:
+  publish-to-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-python@main
+        with:
+          python-version: 3.11
+      - run: |
+          python3 -m pip install -U pip pipenv
+          python3 -m pipenv install
+          python3 -m pipenv install --system --dev
+          sphinx-build -b html docs pages
+      - name: Setup Pages
+        uses: actions/configure-pages@main
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@main
+        with:
+          # Upload entire repository
+          path: 'pages'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

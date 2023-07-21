@@ -4,15 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+jinja2 = "*"
+myst-parser = "*"
 pipenv = "*"
 sphinx = "*"
+sphinx-autobuild = "*"
+sphinx-copybutton = "*"
 
 [dev-packages]
 autopep8 = "*"
+jupyter = "*"
 pydocstyle = "*"
 pylint = "*"
-jupyter = "*"
+pytest = "*"
 semver = "*"
-
-[requires]
-python_version = "3.11"

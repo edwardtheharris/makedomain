@@ -1,4 +1,8 @@
-# New BSD License
+---
+abstract: Copyright (c) 2012, Kay-Uwe (Kiwi) Lorenz, ModuleWorks GmbH
+authors: Kay-Uwe (Kiwi) Lorenz, Xander Harris
+title: New BSD License
+---
 
 Copyright (c) 2012, Kay-Uwe (Kiwi) Lorenz, ModuleWorks GmbH
 

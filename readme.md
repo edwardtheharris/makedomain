@@ -1,68 +1,117 @@
-GNU Make Domain
-===============
+# GNU Make Domain
 
-This `Sphinx extension`_ provides a `GNU Make`_ `domain`_.
+This [Sphinx extension](http://sphinx-doc.org) provides a
+[GNU Make](http://www.gnu.org/software/make/)
+[domain](http://sphinx-doc.org/domains.html). These documents are published
+to [GitHub Pages](https://edwardtheharris.github.io/makedomain/).
 
-.. _Sphinx extension: http://sphinx-doc.org
-.. _GNU Make: http://www.gnu.org/software/make/
-.. _domain: http://sphinx-doc.org/domains.html
+## Installation
 
+```{code-block} shell
+pip install sphinxcontrib-makedomain
+```
 
-Installation
-------------
+## Enable Extension
 
-::
+Add ``sphinxcontrib.makedomain`` to the `extensions` setting in {file}`conf.py`.
 
-    pip install sphinxcontrib-makedomain
+```{code-block} python
+extensions = [ 'sphinxcontrib.makedomain' ]
+```
 
+## Usage
 
-Enable Extension
-----------------
+Get ready for make.
 
-Add ``sphinxcontrib.makedomain`` in ``extensions`` of `conf.py`::
+```{code-block} rst
+:caption: rST
 
-    extensions = [ 'sphinxcontrib.makedomain' ]
+.. highlight:: make
 
+.. default-domain:: make
+```
 
-Usage
------
+````{code-block} markdown
+:caption: MyST Markdown
 
-Get ready for make::
+```{highlight} make
+```
 
-    .. highlight:: make
+```{default-domain} make
+```
+````
 
-    .. default-domain:: make
+### Targets
 
-Describe a target::
+Describe a target
 
-    .. target:: all
+````{code-block} rST
+:caption: rST
 
-       describe here whatever :target:`all` does
+.. target:: all
 
-Describe a variable::
+   describe here whatever :target:`all` does
+````
 
-    .. var:: MY_VAR
+````{code-block} markdown
+:caption: MyST Markdown
 
-       Describe here whatever :var:`MY_VAR` does.
+```{target} all
+describe here whatever {target}`all` does
+```
+````
 
-Describe an exported variable::
+### Variables
 
-    .. expvar:: EXPORTED_VAR
+Describe a variable.
 
-       Describe here whatever :expvar:`EXPORTED_VAR` does.
+```{code-block} rst
+:caption: rST
 
-       This would describe::
+.. var:: MY_VAR
 
-           export EXPORTED_VAR = some string
+   Describe here whatever :var:`MY_VAR` does.
+```
 
+````{code-block} markdown
+:caption: MyST Markdown
 
-License
--------
+```{var} MY_VAR
+Describe here whatever {var}`MY_VAR` does.
+```
+````
 
-New BSD License.
+Describe an exported variable.
 
+````{code-block} rst
+:caption: rST
 
-Author
-------
+.. expvar:: EXPORTED_VAR
 
-`Kay-Uwe (Kiwi) Lorenz <kiwi@franka.dyndns.org>`_ (http://quelltexter.org)
+   Describe here whatever :expvar:`EXPORTED_VAR` does.
+
+   This would describe::
+
+      export EXPORTED_VAR = some string
+````
+
+````{code-block} markdown
+:caption: MyST Markdown
+
+```{expvar} EXPORTED_VAR
+Describe here whatever {expvar}`EXPORTED_VAR` does.
+
+This would describe:
+
+    export EXPORTED_VAR = some string
+```
+````
+
+## License
+
+[New BSD License](/license.md)
+
+## Author
+
+```{sectionauthor} Kay-Uwe (Kiwi) Lorenz <kiwi@franka.dyndns.org> (http://quelltexter.org)
+```
