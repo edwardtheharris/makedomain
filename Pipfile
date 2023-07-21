@@ -8,6 +8,7 @@ myst-parser = "*"
 pipenv = "*"
 sphinx = "*"
 sphinx-autobuild = "*"
+sphinx-copybutton = "*"
 
 [dev-packages]
 autopep8 = "*"

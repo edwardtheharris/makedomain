@@ -23,12 +23,16 @@ extensions = [ 'sphinxcontrib.makedomain' ]
 Get ready for make.
 
 ```{code-block} rst
-    .. highlight:: make
+:caption: rST
 
-    .. default-domain:: make
+.. highlight:: make
+
+.. default-domain:: make
 ```
 
-````{code-block} md
+````{code-block} markdown
+:caption: MyST Markdown
+
 ```{highlight} make
 ```
 
