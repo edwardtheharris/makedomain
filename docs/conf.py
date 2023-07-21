@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import pathlib
 
 author = 'Kay-Uwe Lorenz'
 copyright = '2023, Kay-Uwe Lorenz'
@@ -32,5 +33,7 @@ html_static_path = ['_static']
 
 myst_title_to_header = True
 project = 'Sphinx Contribution Make Domain'
-release = '1.0.0-rc.1'
+with pathlib.Path('../version').open('r', encoding='utf-8') as r_fh:
+    release = r_fh.read()
+show_authors = True
 templates_path = ['_templates']

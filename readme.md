@@ -18,20 +18,33 @@ Add ``sphinxcontrib.makedomain`` to the `extensions` setting in {file}`conf.py`.
 extensions = [ 'sphinxcontrib.makedomain' ]
 ```
 
-Usage
------
+## Usage
 
-Get ready for make::
+Get ready for make.
 
+```{code-block} rst
     .. highlight:: make
 
     .. default-domain:: make
+```
+
+````{code-block} md
+```{highlight} make
+```
+
+```{default-domain} make
+```
+````
+
+### Targets
 
 Describe a target::
 
     .. target:: all
 
        describe here whatever :target:`all` does
+
+### Variables
 
 Describe a variable::
 
@@ -50,13 +63,11 @@ Describe an exported variable::
            export EXPORTED_VAR = some string
 
 
-License
--------
+## License
 
-New BSD License.
+[New BSD License](/license.md)
 
+## Author
 
-Author
-------
-
-`Kay-Uwe (Kiwi) Lorenz <kiwi@franka.dyndns.org>`_ (http://quelltexter.org)
+```{sectionauthor} Kay-Uwe (Kiwi) Lorenz <kiwi@franka.dyndns.org> (http://quelltexter.org)
+```
